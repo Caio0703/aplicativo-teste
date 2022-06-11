@@ -20,7 +20,54 @@ class HomePageState extends State<HomePage> {
         backgroundColor: Colors.green,
         actions: [CustomSwitch()],
       ),
-      body:Center(child: Text('Contador:$counter')),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        child: ListView(
+          children: [
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            CustomSwitch(),
+            Text('contador:$counter'),
+            
+            
+
+          ],
+        ),),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           counter++;
@@ -36,10 +83,10 @@ class CustomSwitch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Switch(
-        value: AppController.instance.isDartTheme,
-        onChanged: (value) {
-          AppController.instance.ChangeTheme();
-        },
-        );
+      value: AppController.instance.isDartTheme,
+      onChanged: (value) {
+        AppController.instance.ChangeTheme();
+      },
+    );
   }
 }
